@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LOS - Logística na Organização da Saúde</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f4f8ff;
+      color:#1b1b1b;
+    }
+
+    header{
+      background:#003c9e;
+      color:white;
+      padding:40px 20px;
+    }
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+    }
+
+    .topo{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:20px;
+    }
+
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:20px;
+    }
+
+    .logo h1{
+      font-size:55px;
+      font-weight:bold;
+    }
+
+    .logo span{
+      display:block;
+      font-size:18px;
+      margin-top:5px;
+      font-weight:normal;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#9fc2ff;
+    }
+
+    .hero{
+      padding:80px 20px;
+      text-align:center;
+      background:white;
+    }
+
+    .hero h2{
+      font-size:50px;
+      color:#003c9e;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      max-width:800px;
+      margin:auto;
+      line-height:1.6;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+      padding:60px 20px;
+    }
+
+    .card{
+      background:white;
+      border-radius:18px;
+      padding:35px;
+      box-shadow:0 5px 20px rgba(0,0,0,0.1);
+      transition:0.3s;
+      border-top:8px solid #003c9e;
+    }
+
+    .card:hover{
+      transform:translateY(-5px);
+    }
+
+    .card h3{
+      color:#003c9e;
+      font-size:30px;
+      margin-bottom:20px;
+    }
+
+    .card p, .card li{
+      font-size:18px;
+      line-height:1.7;
+    }
+
+    .card ul{
+      padding-left:20px;
+    }
+
+    .processo{
+      background:#003c9e;
+      color:white;
+      padding:70px 20px;
+      text-align:center;
+    }
+
+    .processo h2{
+      font-size:40px;
+      margin-bottom:40px;
+    }
+
+    .etapas{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+    }
+
+    .etapa{
+      background:white;
+      color:#003c9e;
+      padding:25px;
+      border-radius:15px;
+      font-weight:bold;
+      font-size:18px;
+    }
+
+    footer{
+      background:#001d4d;
+      color:white;
+      text-align:center;
+      padding:25px;
+      margin-top:40px;
+    }
+
+    @media(max-width:700px){
+
+      .hero h2{
+        font-size:35px;
+      }
+
+      .logo h1{
+        font-size:40px;
+      }
+
+      nav{
+        margin-top:10px;
+      }
+
+      nav a{
+        display:inline-block;
+        margin:10px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="container topo">
+
+      <div class="logo">
+        <div>
+          <h1>LOS</h1>
+          <span>Logística na Organização da Saúde</span>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#missao">Missão</a>
+        <a href="#visao">Visão</a>
+        <a href="#valores">Valores</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h2>Logística de Medicamentos e Vacinas</h2>
+
+      <p>
+        Garantimos qualidade, segurança e eficiência em toda a cadeia logística,
+        desde o armazenamento até a distribuição de medicamentos e vacinas.
+      </p>
+    </div>
+  </section>
+
+  <section class="cards container">
+
+    <div class="card" id="missao">
+      <h3>Missão</h3>
+
+      <p>
+        Garantir o transporte, armazenamento e distribuição segura de medicamentos
+        e vacinas, preservando a qualidade dos produtos e protegendo vidas.
+      </p>
+    </div>
+
+    <div class="card" id="visao">
+      <h3>Visão</h3>
+
+      <p>
+        Ser referência em logística da saúde, reconhecida pela excelência,
+        inovação e compromisso com a segurança e bem-estar da população.
+      </p>
+    </div>
+
+    <div class="card" id="valores">
+      <h3>Valores</h3>
+
+      <ul>
+        <li>Compromisso com a vida</li>
+        <li>Segurança e qualidade</li>
+        <li>Responsabilidade</li>
+        <li>Ética profissional</li>
+        <li>Inovação</li>
+        <li>Trabalho em equipe</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <section class="processo">
+    <div class="container">
+
+      <h2>Nosso Processo Logístico</h2>
+
+      <div class="etapas">
+
+        <div class="etapa">1. Planejamento</div>
+
+        <div class="etapa">2. Recebimento</div>
+
+        <div class="etapa">3. Armazenamento</div>
+
+        <div class="etapa">4. Transporte</div>
+
+        <div class="etapa">5. Distribuição</div>
+
+        <div class="etapa">6. Acompanhamento</div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 LOS - Logística na Organização da Saúde
+  </footer>
+
+</body>
+                   </html>
